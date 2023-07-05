@@ -1,0 +1,35 @@
+body {
+    background-image: url(../assets/animated/gif/background_gif.gif);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: top;
+    background-color: #13334F;
+    z-index: 0;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-images {
+    position: relative;
+    z-index: 10;
+}
+
+.absolute {
+    -webkit-mask: -webkit-gradient(
+    linear,
+    left 45%,
+    left 0%,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+);
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    min-height: 10rem;
+    min-width: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 5;
+}
