@@ -4,55 +4,68 @@
     <meta charset="UTF-8" />
     <title>Welcome page</title>
     <link rel="stylesheet" href="./css/my_style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="./scripts/scripts.js"></script>
   </head>
   <body>
-    <nav class="navigation-bar">
+    <div class="navigation-bar">
       <ul class="navigation-list" id="site-nav">
         <li id="home" class="navItem">
-          <a href="#home-section""><button>Home</button></a>
+          <a href="#home-section""><button class="navbar">Home</button></a>
         </li>
         <li id="web" class="navItem">
-          <a href="#web-section"><button>Web</button></a>
+          <a href="#web-section"><button class="navbar">Web</button></a>
         </li>
         <li id="other" class="navItem">
-          <a href="#other-section"><button>Other</button></a>
+          <a href="#other-section"><button class="navbar">Other</button></a>
         </li>
         <li id="about" class="navItem">
-          <a href="#about-section"><button>Another</button></a>
+          <a href="#about-section"><button class="navbar">Another</button></a>
         </li>
         <li id="resume" class="navItem">
-          <a href="#resume-section"><button>Resume</button></a>
+          <a href="#resume-section"><button class="navbar">Resume</button></a>
         </li>
       </ul>
-    </nav>
-    <div class="absolute"></div>
-    <div id="home-section">
-        <p>MYKYTA RYASNY</p>
-        <img src="./assets/images/my_avatar_image.webp" alt="creator's avatar image" title="click to flip it"/>
     </div>
-    <div id="web-section" class="main-section">
-        <p>Web</p>
-    </div>
-    <div id="other-section" class="main-section">
-        <p>Other</p>
-    </div>
-    <div id="about-section" class="main-section">
-        <p>About</p>
-    </div>
-    <div id="resume-section" class="main-section">
-        <p>Resume</p>
-        <a href="https://github.com/MykytaRyasny" target="_blank">
-            <img src="./assets/images/github_iamge.webp" alt="github image" class="social-media-images"/>
-        </a>
-        <a href="https://www.linkedin.com/in/mykytaryasny/" target="_blank">
-            <img src="./assets/images/linkedin_image.webp" alt="linkeding image" class="social-media-images"/>
-        </a>
-        <figure>
-            <a href="mailto:mykytaryasny@gmail.com" target="_blank">
-                <img src="./assets/images/e-mail_image.webp" alt="e-mail image" class="social-media-images"/>
-            </a>
-            <figcaption>MykytaRyasny@gmail.com</figcaption>
-        </figure>
+    <div class="gradient"></div>
+    <div class="main-page">
+      <div id="home-section" class="personal">
+          <h1>MYKYTA RYASNY</h1>
+          <img onclick="clickMeAvatar()" id="avatar" src="./assets/images/my_avatar_image.webp" alt="creator's avatar image" title="click to flip it"/>
+          <p>A ambitious full stack developer who seeks to improve 
+            at every moment. Whether working on projects or not, 
+            I strive to enhance my programming skills. I'm not looking 
+            to create the flashiest content, but rather the most 
+            optimized and adhering to all the SOLID principles 
+            possible.</p>
+      </div>
+      <div id="web-section" class="main-section">
+          <h2>Web</h2>
+          <p></p>
+      </div>
+      <div id="other-section" class="main-section">
+          <h2>Other</h2>
+      </div>
+      <div id="about-section" class="main-section">
+          <h2>About</h2>
+      </div>
+      <div id="resume-section" class="main-section">
+          <h2>Resume</h2>
+          <a href="https://github.com/MykytaRyasny" target="_blank">
+              <img src="./assets/images/github_iamge.webp" alt="github image" class="social-media-images"/>
+          </a>
+          <a href="https://www.linkedin.com/in/mykytaryasny/" target="_blank">
+              <img src="./assets/images/linkedin_image.webp" alt="linkeding image" class="social-media-images"/>
+          </a>
+          <figure>
+              <a href="mailto:mykytaryasny@gmail.com" target="_blank">
+                  <img src="./assets/images/e-mail_image.webp" alt="e-mail image" class="social-media-images"/>
+              </a>
+              <figcaption>MykytaRyasny@gmail.com</figcaption>
+          </figure>
+      </div>
     </div>
   </body>
 </html>
