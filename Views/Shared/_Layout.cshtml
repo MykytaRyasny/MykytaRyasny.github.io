@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Porfolio</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+        <div class="body">
+        <header>
+            <nav class="navbar_container">
+                <ul class="navbar-list">
+                    <li><a class="navbar-links" href="#todo">Home</a></li>
+                    <li><a class="navbar-links" href="#todo">Presentation</a></li>
+                    <li><a class="navbar-links" href="#todo">Education</a></li>
+                    <li><a class="navbar-links" href="#todo">Work Experience</a></li>
+                    <li><a class="navbar-links" href="#todo">Skills</a></li>
+                    <li><a class="navbar-links" href="#todo">Proyects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+        <footer class="border-top footer text-muted">
+            <div class="container">
+            
+            </div>
+        </footer>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

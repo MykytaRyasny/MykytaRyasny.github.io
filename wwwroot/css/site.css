@@ -1,0 +1,115 @@
+html * {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+li a {
+    font-family: 'Anton', sans-serif;
+}
+
+.navbar_container {
+    background: rgba(250, 235,215, 1);
+    width: 100vw;
+    display: flex;
+    top:0;
+}
+
+.navbar-links, .navbar-links:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-list > li:hover {
+    background-color: burlywood;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.avatar:hover {
+    box-shadow: 0 0 5px 5px rgba(83,54,122, 0.48);
+}
+
+.home {
+    margin: 1.5vw;
+}
+
+.home-item {
+    padding: 1vw;
+    margin: 1vw;
+    box-shadow: 0 0 5px 5px rgba(83,54,122, 0.48);
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.description{
+    text-align: justify;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.web-item-title {
+    font-family: 'Anton', sans-serif;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    background: url(/assets/bg_header.webp);
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index: -1;
+}
+.container {
+    position: relative;
+    margin-top: 50px;
+}
+
+/* Different windows / device size */
+@media (min-width: 500px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar_container {
+        height: 50px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        position: fixed;
+        z-index: 1;
+    }
+
+    .navbar-list {
+        height: 100%;
+        display: flex;
+        justify-items: center;
+    }
+
+    .navbar-list > li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0 10px;
+    }
+
+    .home-item{
+        max-width: 40vw;
+    }
+}
